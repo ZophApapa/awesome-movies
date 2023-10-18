@@ -1,0 +1,15 @@
+.header {
+  height: 60px;
+  background-color: var(--color-3);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: var(--spacing-1);
+}
+.header__links {
+  display:flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-4);
+
+}

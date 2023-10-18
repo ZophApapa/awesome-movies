@@ -1,0 +1,25 @@
+.movie-thumbnail{
+  text-decoration: none;
+  color: var(--text-1);
+}
+.movie-thumbnail__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  text-decoration: none;
+  background-color: #EAEAEA;
+  min-height: 450px;
+}
+
+.movie-thumbnail__title {
+  text-decoration: none;
+  color: var(--color-4);
+  font-weight: bold;
+}
+
+.movie-thumbnail__poster {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,17 @@
+.movie-hero {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 200px 1fr;
+  padding: 20px;
+  padding-left: 60px;
+}
+
+.movie-hero__data {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+.movie-hero__actors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
