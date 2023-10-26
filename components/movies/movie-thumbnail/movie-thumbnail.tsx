@@ -7,7 +7,11 @@ export interface MovieThumbnailProps extends Movie {}
 
 export const MovieThumbnail = (movie: MovieThumbnailProps) => {
   return (
-    <Link className={classes["movie-thumbnail"]} href={`movie/${movie.id}`}>
+    <Link
+      prefetch
+      className={classes["movie-thumbnail"]}
+      href={`movie/${movie.id}`}
+    >
       <div className={classes["movie-thumbnail__container"]}>
         <Image
           className={classes["movie-thumbnail__poster "]}

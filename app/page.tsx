@@ -1,21 +1,11 @@
-"use client";
-
 import { MovieList } from "../components/movies/movie-list/movie-list";
-import { Movie } from "../types/movie.type";
-import { useEffect, useState } from "react";
 
-export default function Home() {
-  const [movies, setMovies] = useState<Movie[]>([]);
-
-  useEffect(() => {
-    fetch("/api/movies")
-      .then((result) => {
-        return result.json();
-      })
-      .then((movies: Movie[]) => {
-        setMovies(movies);
-      });
-  }, []);
+export default async function Home() {
+  const moviesRes = await fetch("http://localhost:3000/api/movies");
+  let movies = [];
+  if (moviesRes.ok) {
+    movies = await moviesRes.json();
+  }
 
   return <MovieList movies={movies} />;
 }
